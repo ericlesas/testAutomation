@@ -1,0 +1,9 @@
+.idea
+src/main
+src/test/resources
+target
+automacao.iml
+pom.xml
+src/test/java/teste/ClassA.java
+src/test/java/teste/ClassB.java
+src/test/java/teste/ClassA.java
