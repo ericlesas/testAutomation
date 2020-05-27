@@ -26,8 +26,8 @@ public class Usbi extends Support {
     public void teste2() throws InterruptedException {
 
         navigate(url);
-        send(emailLogin, "ericles.santos@autoavaliar.com.br");
-        send(passwordLogin, "AA@102030");
+        send(emailLogin, "valid Email");
+        send(passwordLogin, "valid Password");
         click(enterLogin);
         Thread.sleep(15000);
         click(ecoMenu);
@@ -47,9 +47,6 @@ public class Usbi extends Support {
         send(fillAdressNumber, "5");
         send(fillAdressDetail, "Teste");
         send(fillNeighborhood, "Teste");
-        //send(fillUnderline, "_");
-        //click(clickCity);
-        //send(fillYear, "2020");
         send(fillVehicle, "AUDI A3 1.4 TFSI FLEX SEDAN PRESTIGE PLUS TECH TIPTRONIC");
         send(plate, "EAO7655");
         send(renavam, "00972702725");
@@ -60,11 +57,8 @@ public class Usbi extends Support {
         send(engineNumber, "5");
         send(power, "5");
         send(expectedValue, "5");
-        //send(vehicleCity, "São Paulo");
-        //click(vehicleCity);
         Thread.sleep(1000);
         sendSaoPauloRobot();
-        //click(selectCity);
         click(clickObservations);
         send(textObservations, "teste");
         scrollUp();

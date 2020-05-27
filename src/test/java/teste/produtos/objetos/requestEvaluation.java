@@ -15,12 +15,8 @@ public class requestEvaluation {
     public static String fillAdressNumber = "//input[@ng-model=\"ctrl.valuation.n\"]";
     public static String fillAdressDetail = "//input[@ng-model=\"ctrl.valuation.address_details\"]";
     public static String fillNeighborhood = "//input[@ng-model=\"ctrl.valuation.town\"]";
-    //public static String fillUnderline = "//input[@class=\"form-control av-search-filter ng-pristine ng-valid-editable ng-empty ng-valid ng-valid-required ng-touched\"]";
-    //public static String clickCity = "//a[@title=\"Abadia de Goiás / GO\"]";
-    //public static String fillYear = "//input[@ng-model=\"ctrl.interest.year\"]";
     public static String fillVehicle = "//av-search-filter[@disabled=\"!ctrl.interest.year\"]" +
             "//input[@class=\"form-control av-search-filter ng-pristine ng-untouched ng-valid\"]";
-    // public static String clickVehicle = "//li[@id=\"typeahead-833-5583-option-0\"]";
     public static String plate = "//input[@ng-model=\"ctrl.valuation.plate\"]";
     public static String renavam = "//input[@ng-model=\"ctrl.valuation.renavam\"]";
     public static String seats = "//input[@ng-model=\"ctrl.valuation.seats\"]";
@@ -30,8 +26,6 @@ public class requestEvaluation {
     public static String expectedValue= "//input[@ng-model=\"ctrl.valuation.expected_value\"]";
     public static String vehicleCity = "//av-search-filter[@model=\"ctrl.valuation.vehicle_city\"]" +
             "//input[@class=\"form-control av-search-filter ng-pristine ng-untouched ng-valid\"]";
-    //public static String selectCity = "(//ul[@class=\"dropdown-menu ng-isolate-scope\"]//a[@ng-attr-title=\"{{match.label}}\"])[1]";
-    //a[@title="São Paulo / SP"]
     public static String clickObservations = "//div[@ng-click=\"ctrl.obsShow = !ctrl.obsShow\"]";
     public static String textObservations = "//textarea";
     public static String solicitationButton = "//div[@class=\"pull-right\"]//button[@ng-click=\"ctrl.solicita()\"]";
