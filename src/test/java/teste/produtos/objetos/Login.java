@@ -2,8 +2,10 @@ package teste.produtos.objetos;
 
 public class Login {
 
-    public static String url= "https://www.facebook.com/";
-    public static String fieldLogin = "//input[@id=\"email\"]";
-    public static String passwordLogin = "//input[@id=\"pass\"]";
-    public static String enterLogin = "//input[@id=\"u_0_b\"]";
+    public static String url= "https://apps-sandbox-dot-autoavaliar-apps.appspot.com";
+    public static String emailLogin = "//input[@id=\"inputEmail\"]";
+    public static String passwordLogin = "//input[@id=\"inputPassword\"]";
+    public static String enterLogin = "//button[@class=\"btn btn-primary\"]";
+    public static String ecoMenu = "//a[@id=\"top-systems-menu\"]";
+    public static String usbi = "//a[@href=\"https://apps-sandbox-dot-autoavaliar-apps.appspot.com/usbi\"]";
 }
