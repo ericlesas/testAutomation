@@ -79,4 +79,8 @@ public class Support {
     protected void scrollUp(){
         webDriver.executeScript("window.scrollBy(0, -2500)");
     }
+
+    protected ChromeDriver getWebDriver(){
+        return webDriver;
+    }
 }

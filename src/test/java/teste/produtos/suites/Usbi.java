@@ -26,8 +26,8 @@ public class Usbi extends Support {
     public void teste2() throws InterruptedException {
 
         navigate(url);
-        send(emailLogin, "valid Email");
-        send(passwordLogin, "valid Password");
+        send(emailLogin, "ericles.santos@autoavaliar.com.br");
+        send(passwordLogin, "AA@102030");
         click(enterLogin);
         Thread.sleep(15000);
         click(ecoMenu);
