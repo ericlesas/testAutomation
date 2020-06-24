@@ -1,4 +1,4 @@
-package teste;
+package teste.support.usbi;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,7 +8,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
-public class Support {
+public class CoreUsbi {
     private static ChromeDriver webDriver = null;
 
     protected void createChrome(){
@@ -82,5 +82,14 @@ public class Support {
 
     protected ChromeDriver getWebDriver(){
         return webDriver;
+    }
+
+    protected void nextTab(){
+        String paginas = String.valueOf(webDriver.getWindowHandles());
+        paginas = paginas.replace("[", "").replace("]", "");
+
+        String[] paginasQuebrada = paginas.split(",");
+
+        webDriver.switchTo().window(paginasQuebrada[1].trim());
     }
 }

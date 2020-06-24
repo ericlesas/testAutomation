@@ -4,13 +4,12 @@ package teste.produtos.suites;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import teste.Support;
+import teste.support.usbi.CoreUsbi;
 
-import static java.lang.Thread.*;
 import static teste.produtos.objetos.Login.*;
-import static teste.produtos.objetos.requestEvaluation.*;
+import static teste.produtos.objetos.RequestEvaluation.*;
 
-public class Usbi extends Support {
+public class Usbi extends CoreUsbi {
 
     @Before
     public void bf(){
@@ -27,7 +26,7 @@ public class Usbi extends Support {
 
         navigate(url);
         send(emailLogin, "ericles.santos@autoavaliar.com.br");
-        send(passwordLogin, "AA@102030");
+        send(passwordLogin, "Valid Password");
         click(enterLogin);
         Thread.sleep(15000);
         click(ecoMenu);
@@ -65,4 +64,5 @@ public class Usbi extends Support {
         click(solicitationButton);
         Thread.sleep(9000);
     }
+
 }

@@ -1,9 +1,9 @@
 package teste.produtos.objetos;
 
-public class requestEvaluation {
+public class RequestEvaluation {
 
     public static String menuRequestEvaluationButton = "//a[@href=\"#/app/solicita\"]";
-    public static String evaluationType = "//select[@ng-options=\"option.id as option.name for option in ctrl.$api.valuationTypes\"]";
+    public static String evaluationType = "//select[@ng-options=\"option.id as option.name disable when option.id == ctrl.VALUATION_TYPES_ENUM.C2B_DEFAULT for option in ctrl.$api.valuationTypes\"]";
     public static String chooseEvaluationType = "//option[@label=\"Somente compra\"]";
     public static String fillName = "//input[@ng-model=\"ctrl.valuation.name\"]";
     public static String fillEmail = "//input[@ng-model=\"ctrl.valuation.email\"]";
